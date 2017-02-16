@@ -1,0 +1,206 @@
+/*
+Theme Name: 'Web III Theme'
+Description: 'Custom Theme By The Web III Class! Huzzah!'
+Auther: 'Dave P'
+Version: 1.0
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS RESET END*/
+
+/*GLOBALS*/
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+	overflow:hidden;
+	background: #f6eddb;
+}
+
+.left{float:left;}
+.right{float: right;}
+
+header h1, header nav li, section, aside, section article, section article div, footer section, footer section div, footer section nav li{
+	padding: 10px;
+	box-sizing:border-box;
+}
+
+main section, footer section #container, footer section nav{
+	margin-bottom: 10px;
+}
+
+/*GLOBAL - FONT RELATED*/
+@font-face {
+    font-family: 'zenzai_itacharegular';
+    src: url('fonts/zenzai_itacha-webfont.woff2') format('woff2'),
+         url('fonts/zenzai_itacha-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dancing_script_otregular';
+    src: url('fonts/dancingscript-regular-webfont.woff2') format('woff2'),
+         url('fonts/dancingscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{font-size:35px; font-weight:bold; margin-bottom:10px;}
+h2{font-size:30px; font-weight:bold; margin-bottom:10px;}
+h3{font-size:28px; font-weight:bold; margin-bottom:5px;}
+h4{font-size:14px; font-weight:bold; margin-bottom:10px;}
+h5{font-size:10px; font-weight:bold; margin-bottom:10px;}
+h6{font-size:8px;  font-weight:bold; margin-bottom:10px;}
+
+#logo{font-family: 'zenzai_itacharegular';}
+h3{font-family: 'dancing_script_otregular';}
+
+h1, h3{color: #B29F78;}
+
+main aside p{color: #D2C4A8;}
+
+a{color: white;}
+
+p{color: grey;}
+
+/*HEADER*/
+header{
+	background: url(img/ocean-1.jpg);
+}
+
+header .wrapper{background: none;}
+
+header nav li{
+	display:inline-block;
+}
+
+/*MAIN*/
+main section{
+	overflow: hidden;
+}
+
+main section article> *{margin-bottom: 15px;}
+
+main section article img{
+	width: 100%;
+	height: auto;
+}
+
+/*MAIN - ASIDE*/
+main section aside{
+	width: 23%;
+}
+
+main section aside div{
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+main section aside div:last-child{
+	margin-bottom: 0;
+}
+
+main section aside p{text-indent: 5px;}
+
+/*MAIN - ARTICLE*/
+main section article{
+	width: 75%;
+}
+
+main section article p{text-indent: 10px;}
+
+/*FOOTER - GLOBAL*/
+
+/*FOOTER*/
+footer{background: url('img/ocean-1.jpg');/*#535353;*/}
+
+footer .wrapper{background:none;}
+
+footer section{
+	overflow:hidden;
+	width: 100%;
+}
+
+footer section h3, footer section p, footer section span{color:white;}
+
+footer section #container{
+	width: 100%;
+	overflow:hidden;
+}
+
+footer section .widget{
+	width: 33%;
+	float: left;
+	padding-right: 5%;
+	padding-left: 5%;
+	height: 150px;
+	box-sizing: border-box;
+	text-align: center;
+	border-right: 1px solid grey;
+}
+
+footer section .widget:last-child{
+	padding-right: 0;
+	border-right: none;
+}
+
+footer section nav{
+	clear: both;
+	text-align: center;
+}
+
+footer section nav li{display: inline-block;}
+
+footer section #copyright{
+	text-align: center;
+	width: 100%;
+	margin-right: 0;
+	font-weight: bold;
+}
